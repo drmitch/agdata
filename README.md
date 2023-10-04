@@ -10,4 +10,5 @@ Please replace the contents of this README with information about your Building 
 
 You can find information on using this template and defining new Building Blocks in [USAGE.md](USAGE.md).
 
-
+# View main page
+https://drmitch.github.io/agdata/build/generateddocs/slate-build/bbr/template/my-building-block/
