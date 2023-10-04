@@ -1,5 +1,6 @@
 @prefix a: <https://uoguelph.ca/examples/id/dataset/record/> .
 @prefix b: <https://uoguelph.ca/examples/id/dataset/column/> .
+@prefix example-ds: <https://uoguelph.ca/examples/id/dataset/> .
 
 a:_InstanceVariable-source_19970401_46F b:_AttributeValue_animal_id "46F" ;
     b:_AttributeValue_body_fat "0.1" ;
@@ -26,7 +27,7 @@ a:_InstanceVariable-source_19970401_46F b:_AttributeValue_animal_id "46F" ;
     b:_AttributeValue_muscleclass_BGA "." ;
     b:_AttributeValue_muscleclass_UG "1" ;
     b:_AttributeValue_qualitygrade_BGA "." ;
-    b:_AttributeValue_qualitygrade_UG "AA" ;
+    b:_AttributeValue_qualitygrade_UG example-ds:threeAs_AA ;
     b:_AttributeValue_rib_fat1 "9" ;
     b:_AttributeValue_rib_fat2 "12" ;
     b:_AttributeValue_rib_fat3 "10" ;
@@ -66,7 +67,7 @@ a:_InstanceVariable-source_19970421_82F b:_AttributeValue_animal_id "82F" ;
     b:_AttributeValue_muscleclass_BGA "." ;
     b:_AttributeValue_muscleclass_UG "3" ;
     b:_AttributeValue_qualitygrade_BGA "." ;
-    b:_AttributeValue_qualitygrade_UG "AA" ;
+    b:_AttributeValue_qualitygrade_UG example-ds:threeAs_AA ;
     b:_AttributeValue_rib_fat1 "17" ;
     b:_AttributeValue_rib_fat2 "7" ;
     b:_AttributeValue_rib_fat3 "9" ;
@@ -106,7 +107,7 @@ a:_InstanceVariable-source_19970429_35F b:_AttributeValue_animal_id "35F" ;
     b:_AttributeValue_muscleclass_BGA "." ;
     b:_AttributeValue_muscleclass_UG "1" ;
     b:_AttributeValue_qualitygrade_BGA "." ;
-    b:_AttributeValue_qualitygrade_UG "AAA" ;
+    b:_AttributeValue_qualitygrade_UG example-ds:threeAs_AAA ;
     b:_AttributeValue_rib_fat1 "17" ;
     b:_AttributeValue_rib_fat2 "14" ;
     b:_AttributeValue_rib_fat3 "10" ;
