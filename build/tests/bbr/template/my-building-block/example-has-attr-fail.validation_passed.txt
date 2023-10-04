@@ -1,0 +1,30 @@
+=== Files ===
+Using example-has-attr-fail.ttl
+=== End Files ===
+
+=== SHACL ===
+Using SHACL files for validation:
+ - my-building-block/examples/examples-rules.shacl
+
+** Validation error **
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: example-prof:ppp
+	Focus Node: a:_InstanceVariable-source_19970401_46F
+	Result Path: b:_AttributeValue_rib_fat1
+	Message: Less than 1 values on a:_InstanceVariable-source_19970401_46F->b:_AttributeValue_rib_fat1
+
+Focus nodes:
+ - Shape example-prof:commonSHACLtest: a:_InstanceVariable-source_19970421_82F,a:_InstanceVariable-source_19970401_46F,a:_InstanceVariable-source_19970429_35F
+ - Shape example-prof:ppp (path b:_AttributeValue_rib_fat1): *none*
+
+=== End SHACL ===
+
+=== General ===
+Test was expected to fail and it did.
+
+=== End General ===
+

@@ -1,0 +1,17 @@
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== SHACL ===
+Using SHACL files for validation:
+ - my-building-block/examples/examples-rules.shacl
+Validation Report
+Conforms: True
+
+Focus nodes:
+ - Shape example-prof:commonSHACLtest: a:_InstanceVariable-source_19970421_82F,a:_InstanceVariable-source_19970401_46F,a:_InstanceVariable-source_19970429_35F
+ - Shape example-prof:ppp (path b:_AttributeValue_rib_fat1): *none*
+
+=== End SHACL ===
+

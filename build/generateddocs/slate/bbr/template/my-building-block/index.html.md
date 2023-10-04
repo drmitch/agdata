@@ -22,11 +22,11 @@ University of Guelph Meat lab data - data collected based on standard slaughterh
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
+    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="warning">
-Validation for this building block has <strong><a href="https://github.com/drmitch/agdata/blob/master/build/tests/bbr/template/my-building-block/" target="_blank">failed</a></strong>
+<aside class="success">
+This building block is <strong><a href="https://github.com/drmitch/agdata/blob/master/build/tests/bbr/template/my-building-block/" target="_blank">valid</a></strong>
 </aside>
 
 # Description

@@ -5,7 +5,7 @@
 
 University of Guelph Meat lab data - data collected based on standard slaughterhouse procedures. Metadata gathered through OCA - schema available on Borealis.  Next step - creating the building block for a profile. 
 
-[*Status*](http://www.opengis.net/def/status): Invalid
+[*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
