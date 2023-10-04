@@ -18,7 +18,7 @@ Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#
 	Message: Less than 1 values on a:_InstanceVariable-source_19970401_46F->b:_AttributeValue_rib_fat1
 
 Focus nodes:
- - Shape example-prof:commonSHACLtest: a:_InstanceVariable-source_19970421_82F,a:_InstanceVariable-source_19970429_35F,a:_InstanceVariable-source_19970401_46F
+ - Shape example-prof:commonSHACLtest: a:_InstanceVariable-source_19970421_82F,a:_InstanceVariable-source_19970401_46F,a:_InstanceVariable-source_19970429_35F
  - Shape example-prof:ppp (path b:_AttributeValue_rib_fat1): *none*
 
 === End SHACL ===
