@@ -1,0 +1,13 @@
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== SHACL ===
+
+** Validation error **
+at line 18 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"...b'  prof:hasResource\n     [ a prof:ResourceDescriptor ;\n      '^b'rdfs:label "Profile constraints as SHACL" ;\n      dct:confor'..."
+=== End SHACL ===
+
