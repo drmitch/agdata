@@ -4,4 +4,4 @@
 
   snippets:
     - language: ttl
-      ref: examples/workshop.ttl
+      ref: examples/example-beef-dataset-and-service.data.ttl
