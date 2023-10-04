@@ -14,4 +14,4 @@ You can find information on using this template and defining new Building Blocks
 https://drmitch.github.io/agdata/build/generateddocs/slate-build/bbr/template/my-building-block/
 
 # Notes page
-_sources/my-building-block/examples/notes.md
+https://github.com/drmitch/agdata/blob/master/_sources/my-building-block/examples/notes.md
