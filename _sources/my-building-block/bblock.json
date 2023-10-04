@@ -1,6 +1,7 @@
 {
   "name": "My Building Block",
-  "abstract": "This Building Block serves as a template to create new ones",
+  "abstract": "University of Guelph Meat lab data - data collected based on standard slaughterhouse procedures. Metadata gathered through 
+OCA - schema available on Borealis.  Next step - creating the building block for a profile. ",
   "status": "under-development",
   "dateTimeAddition": "2023-04-05T00:00:00Z",
   "itemClass": "schema",
@@ -10,7 +11,7 @@
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
-      "title": "Sample source document",
+      "title": "University of Guelph Meat Lab Data Profile ",
       "link": "https://example.com/sources/1"
     }
   ],
