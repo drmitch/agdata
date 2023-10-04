@@ -10,7 +10,7 @@ Validation Report
 Conforms: True
 
 Focus nodes:
- - Shape example-prof:commonSHACLtest: a:_InstanceVariable-source_19970421_82F,a:_InstanceVariable-source_19970429_35F,a:_InstanceVariable-source_19970401_46F
+ - Shape example-prof:commonSHACLtest: a:_InstanceVariable-source_19970429_35F,a:_InstanceVariable-source_19970401_46F,a:_InstanceVariable-source_19970421_82F
  - Shape example-prof:ppp (path b:_AttributeValue_rib_fat1): *none*
 
 === End SHACL ===

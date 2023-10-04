@@ -96,15 +96,6 @@
         "templates"
       ],
       "itemIdentifier": "ogc.bbr.template.my-building-block",
-      "dependsOn": [
-        "ogc.ogc-utils.iri-or-curie",
-        "ogc.ogc-utils.json-link"
-      ],
-      "schema": {
-        "application/yaml": "https://drmitch.github.io/agdata/build/annotated/bbr/template/my-building-block/schema.yaml",
-        "application/json": "https://drmitch.github.io/agdata/build/annotated/bbr/template/my-building-block/schema.json"
-      },
-      "ldContext": "https://drmitch.github.io/agdata/build/annotated/bbr/template/my-building-block/context.jsonld",
       "sourceFiles": "https://drmitch.github.io/agdata/_sources/my-building-block/",
       "validationPassed": true,
       "testOutputs": "https://github.com/drmitch/agdata/blob/master/build/tests/bbr/template/my-building-block/",

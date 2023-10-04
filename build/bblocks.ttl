@@ -21,11 +21,6 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
-    bblocks:dependsOn bblocks:ogc.ogc-utils.iri-or-curie,
-        bblocks:ogc.ogc-utils.json-link ;
-    bblocks:hasJsonLdContext <https://drmitch.github.io/agdata/build/annotated/bbr/template/my-building-block/context.jsonld> ;
-    bblocks:hasSchema <https://drmitch.github.io/agdata/build/annotated/bbr/template/my-building-block/schema.json>,
-        <https://drmitch.github.io/agdata/build/annotated/bbr/template/my-building-block/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -35,8 +30,8 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-04T12:24:37.340060"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-04T12:24:37.263881"^^xsd:dateTime ;
+    prov:endedAtTime "2023-10-04T12:33:18.486169"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-04T12:33:18.410418"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
