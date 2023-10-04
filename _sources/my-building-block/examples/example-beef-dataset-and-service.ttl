@@ -79,6 +79,20 @@ example-ser:OntarioCattlePopulation  a dcat:DatasetSeries;
 #example-ds:hasBodyFat 
 
 
+example-ds:dsd-beef a qb:DataStructureDefinition;
+    # The dimensions 
+    qb:component [ qb:dimension example-ds:_InstanceVariable_date; skos:notation "date" ];
+    qb:component [  a qb:CodedDimension; qualitygrade_UG
+    # The measure(s)
+    qb:component [ qb:measure  example-ds:_InstanceVariable_body_fat; skos:notation "body_fat" ];
+    qb:component [ qb:measure  example-ds:_InstanceVariable_bone_wt ;  skos:notation "bone_wt" ];
+    # The attributes
+#    qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
+#                   qb:componentRequired "true"^^xsd:boolean;
+#                   qb:componentAttachment qb:DataSet; ] .
+
+
+
 ## alignment of column headers with 
 
 example-ds:_InstanceVariable_body_fat a cdi:InstanceVariable ;
@@ -95,25 +109,20 @@ example-ds:_InstanceVariable_date a cdi:InstanceVariable  ;
   .
 
 
-"decl_bull":"Animals declared bull",
-"decl_cow":"Animals declared cow",
-"decl_heifer":"Animals declared heifer",
-"decl_steer":"Animals declared steer",
-"discrepancies":"Animals with discrepancies between input sheet and tracing data",
-"fat_color":"",
-"fatclass_BGA":"Measured using BioGel application",
-"fatclass_UG":"Measured using ultrasound",
-"grade_fat":"Numerical score reflects the amount of subcutaneous fat covering the ribeye muscle at the 12th rib. Measured using a grading ruler.",
-"hotcarcass_wt":"Hot/unchilled weight post slaughter\r\n& removal of head, hide, intestinal weight and organs. Used to determine yield grade and dressing percentage",
-"image_id":"ID corresponding to image in tracings folder",
-"inter_fat":"",
-"lean_color":"",
+#"decl_bull":"Animals declared bull",
+#"decl_cow":"Animals declared cow",
+#"decl_heifer":"Animals declared heifer",
+#"decl_steer":"Animals declared steer",
+#"discrepancies":"Animals with discrepancies between input sheet and tracing data",
+#"fat_color":"",
+#"fatclass_BGA":"Measured using BioGel application",
+#"fatclass_UG":"Measured using ultrasound",
+#"grade_fat":"Numerical score reflects the amount of subcutaneous fat covering the ribeye muscle at the 12th rib. Measured using a grading ruler.",
+#"hotcarcass_wt":"Hot/unchilled weight post slaughter\r\n& removal of head, hide, intestinal weight and organs. Used to determine yield grade and dressing percentage",
+#"image_id":"ID corresponding to image in tracings folder",
+#"inter_fat":"",
+#"lean_color":"",
 
-
-############## Tarql
-a:19970401_46F b:hotcarcass_wt 244 ;
-b:rib_fat1 9 ;
-.
 
 ## think about using rdf data cube vocab for this:  https://www.w3.org/TR/vocab-data-cube/#reference-dsd
-b:hotcarcass_wt rdfs:isDescribedBy example-ds:_InstanceVariable_body_fat 
+#b:hotcarcass_wt rdfs:isDescribedBy example-ds:_InstanceVariable_body_fat 
