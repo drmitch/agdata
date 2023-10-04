@@ -294,7 +294,7 @@
     </script>
   </head>
 
-  <body class="bbr bbr_template bbr_template_my-building-block bbr_template_my-building-block_index" data-languages="[&quot;shell&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="bbr bbr_template bbr_template_my-building-block bbr_template_my-building-block_index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -303,11 +303,6 @@
     </a>
     <div class="toc-wrapper">
       <img src="../../../images/logo-4d9dfd05.svg" class="logo" alt="" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="python">Python</a>
-              <a href="#" data-language-name="javascript">Javascript</a>
-        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -320,10 +315,13 @@
             <a href="#description" class="toc-h1 toc-link" data-title="Description">Description</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#qui-hastarum-tectus-cithaeron-iuvabat" class="toc-h2 toc-link" data-title="Qui hastarum tectus Cithaeron iuvabat">Qui hastarum tectus Cithaeron iuvabat</a>
+                    <a href="#university-of-guelph-beef-meat-lab-data" class="toc-h2 toc-link" data-title="University of Guelph Beef Meat Lab data">University of Guelph Beef Meat Lab data</a>
                   </li>
                   <li>
-                    <a href="#iam-vota-cui-dilataque-peterem" class="toc-h2 toc-link" data-title="Iam vota cui dilataque peterem">Iam vota cui dilataque peterem</a>
+                    <a href="#oca-schema-for-the-ug-meat-lab-data" class="toc-h2 toc-link" data-title="OCA Schema for the UG meat lab data">OCA Schema for the UG meat lab data</a>
+                  </li>
+                  <li>
+                    <a href="#taking-it-to-the-next-level" class="toc-h2 toc-link" data-title="Taking it to the next level">Taking it to the next level</a>
                   </li>
               </ul>
           </li>
@@ -331,10 +329,7 @@
             <a href="#examples" class="toc-h1 toc-link" data-title="Examples">Examples</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#this-is-an-example-with-just-a-description-and-no-code-snippets" class="toc-h2 toc-link" data-title="This is an example with just a description and no code snippets.">This is an example with just a description and no code snippets.</a>
-                  </li>
-                  <li>
-                    <a href="#examples-can-have-content-and-or-code-snippets" class="toc-h2 toc-link" data-title="Examples can have content and/or code snippets.">Examples can have content and/or code snippets.</a>
+                    <a href="#test-case-for-cdif-workshop" class="toc-h2 toc-link" data-title="Test case for CDIF workshop">Test case for CDIF workshop</a>
                   </li>
               </ul>
           </li>
@@ -343,6 +338,14 @@
           </li>
           <li>
             <a href="#json-ld-context" class="toc-h1 toc-link" data-title="JSON-LD Context">JSON-LD Context</a>
+          </li>
+          <li>
+            <a href="#validation" class="toc-h1 toc-link" data-title="Validation">Validation</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#shacl-shapes" class="toc-h2 toc-link" data-title="SHACL Shapes">SHACL Shapes</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#references" class="toc-h1 toc-link" data-title="References">References</a>
@@ -361,53 +364,313 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='my-building-block-ogc-bbr-template-my-building-block'>My Building Block <code>ogc.bbr.template.my-building-block</code></h1>
-<p>This Building Block serves as a template to create new ones</p>
+<p>University of Guelph Meat lab data - data collected based on standard slaughterhouse procedures. Metadata gathered through OCA - schema available on Borealis.  Next step - creating the building block for a profile. </p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
+    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
 </p>
 
-<aside class="success">
-This building block is <strong>valid</strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/drmitch/agdata/blob/master/build/tests/bbr/template/my-building-block/" target="_blank">failed</a></strong>
 </aside>
-<h1 id='description'>Description</h1><h2 id='qui-hastarum-tectus-cithaeron-iuvabat'>Qui hastarum tectus Cithaeron iuvabat</h2>
-<p>Lorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat
-temperat sucos. Est graves dant sentire sanguinis flores respondent testari.</p>
+<h1 id='description'>Description</h1><h2 id='university-of-guelph-beef-meat-lab-data'>University of Guelph Beef Meat Lab data</h2>
+<p>Data is collected at the meat lab on campus of all beef animals grown and trialed at the Ontario Beef Research Centre (Ontario Agri-food Alliance Partnership)  Standard data collected includes hot carcass wts, ribfat measures, and standard grading data.</p>
+<h2 id='oca-schema-for-the-ug-meat-lab-data'>OCA Schema for the UG meat lab data</h2>
+<p>OCA schemas were created for UG meat lab data - schema is available at https://borealisdata.ca/dataverse/adcSchema for viewing</p>
+<h2 id='taking-it-to-the-next-level'>Taking it to the next level</h2>
+<p>Working with OCA schemas to move to DCAT and beyond to facilitate catalogue searching through the creation of a profile </p>
+<h1 id='examples'>Examples</h1><h2 id='test-case-for-cdif-workshop'>Test case for CDIF workshop</h2>
+<p>Generated by Tarql by @Pwin</p>
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="k">a</span><span class="nn">:</span><span class="w">  </span><span class="nl">&lt;https://uoguelph.ca/examples/id/dataset/record/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">b:</span><span class="w">  </span><span class="nl">&lt;https://uoguelph.ca/examples/id/dataset/column/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w">  </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
 
-<blockquote>
-<p>Videri vias quid Ausoniae sua flores ante, reminiscitur fuit est. Semel
-<a href="http://silvaque.org/">hectora</a> peregrinaeque rudem exercent in, Troiana si
-Asida instabilesque somno sed.</p>
+</span><span class="k">a</span><span class="nn">:</span><span class="n">_InstanceVariable-source_19970401_46F
+</span><span class="w">        </span><span class="nn">b:</span><span class="n">_AttributeValue_animal_id</span><span class="w">     </span><span class="s">"46F"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_hotcarcass_wt</span><span class="w">  </span><span class="s">"244"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat1</span><span class="w">      </span><span class="s">"9"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat2</span><span class="w">      </span><span class="s">"12"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat3</span><span class="w">      </span><span class="s">"10"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_grade_fat</span><span class="w">     </span><span class="s">"8"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyearea_sqin</span><span class="w">  </span><span class="s">"9.2"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyearea_sqmm</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_marbling</span><span class="w">      </span><span class="s">"4.5"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_lean_color</span><span class="w">    </span><span class="s">"4"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fat_color</span><span class="w">     </span><span class="s">"4"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_qualitygrade_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_qualitygrade_UG</span><span class="w">  </span><span class="s">"AA"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_yieldgrade_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_yieldgrade_UG</span><span class="w">  </span><span class="s">"A1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fatclass_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fatclass_UG</span><span class="w">   </span><span class="s">"2"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyewidth_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyewidth_UG</span><span class="w">  </span><span class="s">"1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyelength_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyelength_UG</span><span class="w">  </span><span class="s">"1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_muscleclass_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_muscleclass_UG</span><span class="w">  </span><span class="s">"1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_leanyield_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_leanyield_UG</span><span class="w">  </span><span class="s">"59"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_live_wt</span><span class="w">       </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_wt</span><span class="w">        </span><span class="s">"3.36"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_body_fat</span><span class="w">      </span><span class="s">"0.1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_sub_fat</span><span class="w">       </span><span class="s">"0.46"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_inter_fat</span><span class="w">     </span><span class="s">"0.54"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_lean_wt</span><span class="w">       </span><span class="s">"1.68"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_bone_wt</span><span class="w">       </span><span class="s">"0.58"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_liver_wt</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_discrepancies</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_steer</span><span class="w">    </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_heifer</span><span class="w">   </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_bull</span><span class="w">     </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_cow</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_image_id</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span><span class="k">a</span><span class="nn">:</span><span class="n">_InstanceVariable-source_19970421_82F
+</span><span class="w">        </span><span class="nn">b:</span><span class="n">_AttributeValue_animal_id</span><span class="w">     </span><span class="s">"82F"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_hotcarcass_wt</span><span class="w">  </span><span class="s">"323"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat1</span><span class="w">      </span><span class="s">"17"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat2</span><span class="w">      </span><span class="s">"7"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat3</span><span class="w">      </span><span class="s">"9"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_grade_fat</span><span class="w">     </span><span class="s">"9"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyearea_sqin</span><span class="w">  </span><span class="s">"12.1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyearea_sqmm</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_marbling</span><span class="w">      </span><span class="s">"5"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_lean_color</span><span class="w">    </span><span class="s">"4"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fat_color</span><span class="w">     </span><span class="s">"4"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_qualitygrade_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_qualitygrade_UG</span><span class="w">  </span><span class="s">"AA"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_yieldgrade_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_yieldgrade_UG</span><span class="w">  </span><span class="s">"A1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fatclass_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fatclass_UG</span><span class="w">   </span><span class="s">"3"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyewidth_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyewidth_UG</span><span class="w">  </span><span class="s">"3"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyelength_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyelength_UG</span><span class="w">  </span><span class="s">"2"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_muscleclass_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_muscleclass_UG</span><span class="w">  </span><span class="s">"3"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_leanyield_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_leanyield_UG</span><span class="w">  </span><span class="s">"60"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_live_wt</span><span class="w">       </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_wt</span><span class="w">        </span><span class="s">"5.06"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_body_fat</span><span class="w">      </span><span class="s">"0.1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_sub_fat</span><span class="w">       </span><span class="s">"0.66"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_inter_fat</span><span class="w">     </span><span class="s">"0.74"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_lean_wt</span><span class="w">       </span><span class="s">"2.64"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_bone_wt</span><span class="w">       </span><span class="s">"0.92"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_liver_wt</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_discrepancies</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_steer</span><span class="w">    </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_heifer</span><span class="w">   </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_bull</span><span class="w">     </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_cow</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_image_id</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span><span class="k">a</span><span class="nn">:</span><span class="n">_InstanceVariable-source_19970429_35F
+</span><span class="w">        </span><span class="nn">b:</span><span class="n">_AttributeValue_animal_id</span><span class="w">     </span><span class="s">"35F"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_hotcarcass_wt</span><span class="w">  </span><span class="s">"310"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat1</span><span class="w">      </span><span class="s">"17"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat2</span><span class="w">      </span><span class="s">"14"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_fat3</span><span class="w">      </span><span class="s">"10"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_grade_fat</span><span class="w">     </span><span class="s">"10"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyearea_sqin</span><span class="w">  </span><span class="s">"10.5"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyearea_sqmm</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_marbling</span><span class="w">      </span><span class="s">"6"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_lean_color</span><span class="w">    </span><span class="s">"4"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fat_color</span><span class="w">     </span><span class="s">"4"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_qualitygrade_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_qualitygrade_UG</span><span class="w">  </span><span class="s">"AAA"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_yieldgrade_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_yieldgrade_UG</span><span class="w">  </span><span class="s">"A2"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fatclass_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_fatclass_UG</span><span class="w">   </span><span class="s">"3"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyewidth_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyewidth_UG</span><span class="w">  </span><span class="s">"1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyelength_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_ribeyelength_UG</span><span class="w">  </span><span class="s">"1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_muscleclass_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_muscleclass_UG</span><span class="w">  </span><span class="s">"1"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_leanyield_BGA</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_leanyield_UG</span><span class="w">  </span><span class="s">"58"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_live_wt</span><span class="w">       </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_rib_wt</span><span class="w">        </span><span class="s">"4.28"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_body_fat</span><span class="w">      </span><span class="s">"0.14"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_sub_fat</span><span class="w">       </span><span class="s">"0.46"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_inter_fat</span><span class="w">     </span><span class="s">"0.68"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_lean_wt</span><span class="w">       </span><span class="s">"2.3"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_bone_wt</span><span class="w">       </span><span class="s">"0.7"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_liver_wt</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_discrepancies</span><span class="w">  </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_steer</span><span class="w">    </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_heifer</span><span class="w">   </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_bull</span><span class="w">     </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_decl_cow</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">b:</span><span class="n">_AttributeValue_image_id</span><span class="w">      </span><span class="s">"."</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://raw.githubusercontent.com/drmitch/agdata/master/build/tests/bbr/template/my-building-block/example_1_1.ttl">Open in new window</a>
 </blockquote>
-<h2 id='iam-vota-cui-dilataque-peterem'>Iam vota cui dilataque peterem</h2>
-<p>Tinxit lumina lacer liquidarum Aiax si mergitur sed fueris capitisque <strong>et
-cadit</strong> contigerant rectum <a href="http://prosternit.com/quoque.html">ferar</a> temperat.
-Monet caput adsensere Ityn furentibus gelidos.</p>
-<h1 id='examples'>Examples</h1><h2 id='this-is-an-example-with-just-a-description-and-no-code-snippets'>This is an example with just a description and no code snippets.</h2>
-<p>This is the content of the example.</p>
-
-<p>In <strong>Markdown</strong> format.</p>
-<h2 id='examples-can-have-content-and-or-code-snippets'>Examples can have content and/or code snippets.</h2>
-<p>The content of this example. </p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">echo</span> <span class="s1">'Hello, world!'</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="k">print</span><span class="p">(</span><span class="s">'Hello, world!'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, world!</span><span class="dl">'</span><span class="p">)</span>
-</code></pre></div><h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s">Schema for my building block</span>
-<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
-<span class="na">properties</span><span class="pi">:</span>
+<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">provenance chain</span>
+<span class="na">$defs</span><span class="pi">:</span>
+  <span class="na">objectref</span><span class="pi">:</span>
+    <span class="na">$anchor</span><span class="pi">:</span> <span class="s">objectref</span>
+    <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json</span>
+  <span class="na">oneOrMoreActivitiesOrRefIds</span><span class="pi">:</span>
+    <span class="na">oneOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Activity'</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+      <span class="na">items</span><span class="pi">:</span>
+        <span class="na">anyOf</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+        <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Activity'</span>
+  <span class="na">oneOrMoreEntitiesOrRefIds</span><span class="pi">:</span>
+    <span class="na">oneOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Entity'</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+      <span class="na">items</span><span class="pi">:</span>
+        <span class="na">anyOf</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+        <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Entity'</span>
+  <span class="na">oneOrMoreAgentsOrRefIds</span><span class="pi">:</span>
+    <span class="na">oneOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/externalLink'</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Agent'</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+      <span class="na">items</span><span class="pi">:</span>
+        <span class="na">anyOf</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+        <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Agent'</span>
+  <span class="na">externalLink</span><span class="pi">:</span>
+    <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json</span>
+  <span class="na">Entity</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">id</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">featureType</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+      <span class="na">provenance</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Prov'</span>
+      <span class="na">wasGeneratedBy</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreActivitiesOrRefIds'</span>
+      <span class="na">wasAttributedTo</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreAgentsOrRefIds'</span>
+      <span class="na">wasDerivedFrom</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreEntitiesOrRefIds'</span>
+      <span class="na">links</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+        <span class="na">items</span><span class="pi">:</span>
+          <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/externalLink'</span>
+    <span class="na">required</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">id</span>
+    <span class="na">anyOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+          <span class="na">const</span><span class="pi">:</span> <span class="s">Entity</span>
+      <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">type</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">featureType</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">wasGeneratedBy</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">wasAttributedTo</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">wasDerivedFrom</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">provenance</span>
+  <span class="na">dateOrTime</span><span class="pi">:</span>
+    <span class="na">oneOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">format</span><span class="pi">:</span> <span class="s">date</span>
+      <span class="na">pattern</span><span class="pi">:</span> <span class="s">^\d{4}-\d{2}-\d{2}$</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">format</span><span class="pi">:</span> <span class="s">date-time</span>
+      <span class="na">pattern</span><span class="pi">:</span> <span class="s">^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$</span>
+  <span class="na">Activity</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">activity</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+      <span class="na">endedAtTime</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/dateOrTime'</span>
+      <span class="na">wasAssociatedWith</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreAgentsOrRefIds'</span>
+      <span class="na">wasInformedBy</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreActivitiesOrRefIds'</span>
+      <span class="na">used</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreEntitiesOrRefIds'</span>
+    <span class="na">anyOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+          <span class="na">const</span><span class="pi">:</span> <span class="s">Activity</span>
+      <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">type</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">activity</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">used</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">wasInformedBy</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">endedAtTime</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">startedAtTime</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">wasAssociatedWith</span>
+  <span class="na">Agent</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">agentType</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/objectref'</span>
+      <span class="na">name</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">id</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+        <span class="na">format</span><span class="pi">:</span> <span class="s">uri</span>
+      <span class="na">actedOnBehalfOf</span><span class="pi">:</span>
+        <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/oneOrMoreAgentsOrRefIds'</span>
+    <span class="na">required</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">name</span>
+    <span class="na">anyOf</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+          <span class="na">const</span><span class="pi">:</span> <span class="s">Agent</span>
+      <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">type</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">agentType</span>
+    <span class="pi">-</span> <span class="na">required</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">actedOnBehalfOf</span>
+  <span class="na">Prov</span><span class="pi">:</span>
+    <span class="na">description</span><span class="pi">:</span> <span class="s">An list of provenance objects linked together to form a provenance</span>
+      <span class="s">chain for the current object. Objects may have nested objects as well, with</span>
+      <span class="s">or without referencable ids</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
+    <span class="na">items</span><span class="pi">:</span>
+      <span class="na">oneOf</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Entity'</span>
+      <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Activity'</span>
+      <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Agent'</span>
+<span class="na">anyOf</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Entity'</span>
+<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/Activity'</span>
+<span class="na">x-jsonld-extra-terms</span><span class="pi">:</span>
   <span class="na">a</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
-    <span class="na">format</span><span class="pi">:</span> <span class="s">uri</span>
     <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://example.org/my-bb-model/a</span>
     <span class="na">x-jsonld-type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@id'</span>
-  <span class="na">b</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">number</span>
-    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://example.org/my-bb-model/b</span>
-<span class="na">required</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="s">a</span>
-<span class="pi">-</span> <span class="s">b</span>
+  <span class="na">b</span><span class="pi">:</span> <span class="s">https://example.org/my-bb-model/b</span>
 
 </code></pre></div>
 <blockquote>
@@ -422,11 +685,26 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 </ul>
 <h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oa:hasTarget"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rel"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.iana.org/assignments/relation"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"@base"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.iana.org/assignments/relation/"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:type"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hreflang"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:language"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rdfs:label"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"length"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dct:extent"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"a"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/my-bb-model/a"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"b"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/my-bb-model/b"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"oa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/ns/oa#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dct"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://purl.org/dc/terms/"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"@version"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -437,9 +715,15 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 
 <p>You can find the full JSON-LD context here:
 <a href="https://raw.githubusercontent.com/drmitch/agdata/master/build/annotated/bbr/template/my-building-block/context.jsonld" target="_blank">https://raw.githubusercontent.com/drmitch/agdata/master/build/annotated/bbr/template/my-building-block/context.jsonld</a></p>
+<h1 id='validation'>Validation</h1><h2 id='shacl-shapes'>SHACL Shapes</h2>
+<p>The following SHACL shapes are used for validating this building block:</p>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/drmitch/agdata/master/_sources/my-building-block/examples/examples-rules.shacl">https://raw.githubusercontent.com/drmitch/agdata/master/_sources/my-building-block/examples/examples-rules.shacl</a></li>
+</ul>
 <h1 id='references'>References</h1>
 <ul>
-<li><a href="https://example.com/sources/1">Sample source document</a></li>
+<li><a href="https://example.com/sources/1">University of Guelph Meat Lab Data Profile </a></li>
 </ul>
 <h1 id='for-developers'>For developers</h1>
 <p>The source code for this Building Block can be found in the following repository:</p>
@@ -452,11 +736,6 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="python">Python</a>
-                <a href="#" data-language-name="javascript">Javascript</a>
-          </div>
       </div>
     </div>
   </body>

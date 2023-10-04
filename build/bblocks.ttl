@@ -9,32 +9,34 @@
 bblocks:ogc.bbr.template.my-building-block a skos:Concept,
         bblocks:Schema ;
     rdfs:label "My Building Block" ;
-    dct:abstract "This Building Block serves as a template to create new ones" ;
+    dct:abstract "University of Guelph Meat lab data - data collected based on standard slaughterhouse procedures. Metadata gathered through OCA - schema available on Borealis.  Next step - creating the building block for a profile. " ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://raw.githubusercontent.com/drmitch/agdata/master/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/drmitch/agdata/master/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/drmitch/agdata/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/drmitch/agdata/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/drmitch/agdata/master/build/generateddocs/slate-build/bbr/template/my-building-block/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
+    bblocks:dependsOn bblocks:ogc.ogc-utils.iri-or-curie,
+        bblocks:ogc.ogc-utils.json-link ;
     bblocks:hasJsonLdContext <https://raw.githubusercontent.com/drmitch/agdata/master/build/annotated/bbr/template/my-building-block/context.jsonld> ;
     bblocks:hasSchema <https://raw.githubusercontent.com/drmitch/agdata/master/build/annotated/bbr/template/my-building-block/schema.json>,
         <https://raw.githubusercontent.com/drmitch/agdata/master/build/annotated/bbr/template/my-building-block/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
+    bblocks:status <http://www.opengis.net/def/status/invalid> .
 
-<https://example.com/sources/1> rdfs:label "Sample source document" .
+<https://example.com/sources/1> rdfs:label "University of Guelph Meat Lab Data Profile " .
 
 <https://www.opengis.net/def/bblocks> a skos:ConceptScheme ;
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-04T07:59:16.286801"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-04T07:59:16.198358"^^xsd:dateTime ;
+    prov:endedAtTime "2023-10-04T09:41:04.240273"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-04T09:41:04.164929"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
