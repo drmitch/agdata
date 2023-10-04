@@ -9,6 +9,7 @@
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
 @prefix a: <https://uoguelph.ca/examples/id/dataset/record/> . 
 @prefix b: <https://uoguelph.ca/examples/id/dataset/column/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 example-prof:prof_beef a prof:Profile ;
   skos:definition """Common Profile for all Beef Data.""";
