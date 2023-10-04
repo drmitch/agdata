@@ -1,7 +1,6 @@
 {
   "name": "My Building Block",
-  "abstract": "University of Guelph Meat lab data - data collected based on standard slaughterhouse procedures. Metadata gathered through 
-OCA - schema available on Borealis.  Next step - creating the building block for a profile. ",
+  "abstract": "University of Guelph Meat lab data - data collected based on standard slaughterhouse procedures. Metadata gathered through OCA - schema available on Borealis.  Next step - creating the building block for a profile. ",
   "status": "under-development",
   "dateTimeAddition": "2023-04-05T00:00:00Z",
   "itemClass": "schema",
@@ -17,5 +16,6 @@ OCA - schema available on Borealis.  Next step - creating the building block for
   ],
   "maturity": "mature",
   "scope": "unstable",
+  "shaclRules": [ "examples/examples-rules.shacl" ],
   "tags": ["templates"]
 }
