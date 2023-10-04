@@ -25,11 +25,29 @@ example-prof:prof_beef a prof:Profile ;
       ]
 
   .
+example-prof:prof_beef a prof:Profile ;
+  skos:definition """Common Profile for all Beef Data.""";
+  prof:hasResource
+     [ a prof:ResourceDescriptor ;
+      rdfs:label "Profile constraints as SHACL" ;
+      dct:conformsTo shacl: ;
+      dct:format "text/turtle" ;
+      rdfs:comment "Artefact is test" ;
+      prof:hasArtifact example-prof:commonSHACLtest ;
+      prof:hasRole profrole:validation
+      ]
+
+  .
 
 example-prof:commonSHACLtest a shacl:NodeShape ;
  shacl:name "Run the tests" ;
- #shacl:property example-prof:ppp ;
- shacl:targetObjectsOf b:_AttributeValue_hotcarcass_wt , b:_AttributeValue_rib_fat1 ;
+ shacl:property example-prof:ppp ;
+ shacl:targetSubjectsOf b:_AttributeValue_hotcarcass_wt , b:_AttributeValue_rib_fat1 ;
+
+.
+
+example-prof:ppp a shacl:PropertyShape ;
+ shacl:path b:_AttributeValue_rib_fat1 ;
   shacl:maxCount 1 ;
   shacl:minCount 1 ;
   shacl:name "confirm one body fat measurement" ;
