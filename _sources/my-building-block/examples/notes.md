@@ -5,4 +5,4 @@
 * test the config before committing to the repo
 this is done with the Docker command that is in the documentation
 * The docker workslow results in a SHACL validation of the data shown in the build/test folder
- 
+* Following validation, under the 'tests' folder the example data can be copied/renamed and specified failures can be created to test the SHACL tests, just to be able to confirm that the tests are working. 
