@@ -1,0 +1,62 @@
+prefix a: <https://uoguelph.ca/examples/id/dataset/record/> 
+prefix b: <https://uoguelph.ca/examples/id/dataset/column/> 
+
+construct
+{
+
+?record_IRI 
+			b:_AttributeValue_animal_id	?animal_id ;
+			b:_AttributeValue_hotcarcass_wt  ?hotcarcass_wt ;
+			b:_AttributeValue_rib_fat1  ?rib_fat1 ;
+			b:_AttributeValue_rib_fat2  ?rib_fat2 ;
+			b:_AttributeValue_rib_fat3  ?rib_fat3 ;
+			b:_AttributeValue_grade_fat  ?grade_fat ;
+			b:_AttributeValue_ribeyearea_sqin  ?ribeyearea_sqin ;
+			b:_AttributeValue_ribeyearea_sqmm  ?ribeyearea_sqmm	;
+			b:_AttributeValue_marbling  ?marbling	;
+			b:_AttributeValue_lean_color  ?lean_color	;
+			b:_AttributeValue_fat_color  ?fat_color	;
+			b:_AttributeValue_qualitygrade_BGA  ?qualitygrade_BGA	;
+			b:_AttributeValue_qualitygrade_UG  ?qualitygrade_UG	;
+			b:_AttributeValue_yieldgrade_BGA  ?yieldgrade_BGA	;
+			b:_AttributeValue_yieldgrade_UG  ?yieldgrade_UG	;
+			b:_AttributeValue_fatclass_BGA  ?fatclass_BGA	;
+			b:_AttributeValue_fatclass_UG  ?fatclass_UG	;
+			b:_AttributeValue_ribeyewidth_BGA  ?ribeyewidth_BGA	;
+			b:_AttributeValue_ribeyewidth_UG  ?ribeyewidth_UG	;
+			b:_AttributeValue_ribeyelength_BGA  ?ribeyelength_BGA	;
+			b:_AttributeValue_ribeyelength_UG  ?ribeyelength_UG	;
+			b:_AttributeValue_muscleclass_BGA  ?muscleclass_BGA	;
+			b:_AttributeValue_muscleclass_UG  ?muscleclass_UG	;
+			b:_AttributeValue_leanyield_BGA  ?leanyield_BGA	;
+			b:_AttributeValue_leanyield_UG  ?leanyield_UG	;
+			b:_AttributeValue_live_wt  ?live_wt	;
+			b:_AttributeValue_rib_wt  ?rib_wt	;
+			b:_AttributeValue_body_fat  ?body_fat	;
+			b:_AttributeValue_sub_fat  ?sub_fat	;
+			b:_AttributeValue_inter_fat  ?inter_fat	;
+			b:_AttributeValue_lean_wt  ?lean_wt	;
+			b:_AttributeValue_bone_wt  ?bone_wt	;
+			b:_AttributeValue_liver_wt  ?liver_wt	;
+			b:_AttributeValue_discrepancies  ?discrepancies	;
+			b:_AttributeValue_decl_steer  ?decl_steer	;
+			b:_AttributeValue_decl_heifer  ?decl_heifer	;
+			b:_AttributeValue_decl_bull  ?decl_bull	;
+			b:_AttributeValue_decl_cow  ?decl_cow	;
+			b:_AttributeValue_image_id  ?image_id    ;
+			.
+
+
+}
+where
+{
+
+     BIND ('[^A-Za-z0-9-:]' as ?special)
+     BIND ('/' as ?slash)
+     BIND ('[/&]' as ?splitter)
+     BIND("~" as ?snarl)
+     BIND("_" as ?underscore)
+
+ BIND (tarql:expandPrefixedName(concat('a:_InstanceVariable-source_' ,replace(str(?date), ?special,?underscore), ?underscore, replace(str(?animal_id), ?special,?underscore)))  as ?record_IRI)
+
+}

@@ -1,0 +1,117 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix example-ds: <https://uoguelph.ca/examples/id/dataset/> .
+@prefix example-ser: <https://uoguelph.ca/examples/id/datasetseries/> .
+@prefix example-prof: <https://uoguelph.ca/examples/id/profiles/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prof:  <http://www.w3.org/ns/dx/prof> .
+@prefix profrole: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix a: <https://uoguelph.ca/examples/id/dataset/record/> . 
+@prefix b: <https://uoguelph.ca/examples/id/dataset/column/> .
+
+
+example-ds:OntarioBeefPopulation a dcat:Dataset;
+  dct:title "dataset of information on the beef population in Ontario"@en;
+  dct:issued "2023-10-03"^^<xsd:date>;
+  skos:note "dct:spatial range interpretation requires some other level of metadata to be useful (Rob Atkinson to advise).  e.g. there is in GeoDCAT-AP an alternative that uses gazeteer entries as object.  What level of specificity of the predicates is required?  Look at the metadata layer in the original."
+  dct:spatial <https://www.geonames.org/6093943>;
+  dcat:inSeries example-ser:OntarioCattlePopulation ;
+  dct:conformsTo example-prof:prof_beef  ;
+  .
+
+<example-api:Beef-API-Platform> a dcat:DataService;
+  dct:title "API platform for beef data"@en;
+  dct:description "This data platform is where the beef is."@en;
+  dcat:endpointURL <https://example.org/api/v2/beef>;
+  dcat:servesDataset example-ds:OntarioBeefPopulation .
+
+example-ds:BeefPopulation2023 a dcat:Dataset;
+  dct:title "Beef population 2023 in the province of Ontario"@en;
+  dct:issued "2023-03-21"^^<xsd:date>;
+  dct:modified "2023-03-21"^^<xsd:date>;
+  dct:spatial <https://www.geonames.org/6093943>;
+  dcat:distribution <example-dist:BeePopulation2023/csv>;
+  dcat:inSeries example-ser:OntarioCattlePopulation;
+  dcat:prev example-ds:BeefPopulation2022 .
+
+<example-dist:BeefPopulation2023/csv> a dcat:Distribution .
+
+example-ds:BeefPopulation2022 a dcat:Dataset;
+  dct:title "Beef population 2022 in the province of Ontario"@en;
+  dct:issued "2022-03-01"^^<xsd:date>;
+  dct:modified "2022-03-20"^^<xsd:date>;
+  dct:spatial <hhttps://www.geonames.org/6093943>;
+  dcat:inSeries example-ser:OntarioCattlePopulation;
+  dcat:prev example-ds:BeefPopulation2000 .
+
+example-ds:BeefPopulation2000 a dcat:Dataset;
+  dct:title "Beef population 2000 in Ontario"@en;
+  dct:issued "2023-06-01"^^<xsd:date>;
+  dct:modified "2023-06-01"^^<xsd:date>;
+  dct:spatial <https://www.geonames.org/6093943>;
+  dcat:inSeries example-ser:OntarioCattlePopulation .
+
+example-ser:OntarioCattlePopulation  a dcat:DatasetSeries;
+  dct:title "Ontario Beef population quality data"@en;
+  dct:issued "2022-10-01"^^<xsd:date>;
+  dct:modified "2023-10-03"^^<xsd:date>;
+  dct:spatial <https://www.geonames.org/6093943>;
+  dcat:last example-ds:BeefPopulation2022 .
+
+
+
+
+#example-prof:ppp
+ # a shacl:PropertyShape ;
+ # shacl:path b:hotcarcass_wt , b:rib_fat1 ;
+ # ##shacl:class cdi:InstanceVariable ;
+ # shacl:nodeKind shacl:or (xsd:integer, xsd:float) ;
+ # shacl:maxCount 1 ;
+ # shacl:minCount 1 ;
+ # shacl:name "confirm one body fat measurement" ;
+ # shacl:nodeKind shacl:IRI ;
+ # .
+
+
+#example-ds:hasBodyFat 
+
+
+## alignment of column headers with 
+
+example-ds:_InstanceVariable_body_fat a cdi:InstanceVariable ;
+  skos:prefLabel "body_fat";
+  .
+example-ds:_InstanceVariable_bone_wt a cdi:InstanceVariable ;
+  skos:prefLabel "bone_wt";
+  skos:definition "After removal of meat and other tissues";
+  .
+
+example-ds:_InstanceVariable_date a cdi:InstanceVariable  ;
+  skos:prefix "date" ;
+  cdi:InstanceVariable-physicalDataType xsd:date ;
+  .
+
+
+"decl_bull":"Animals declared bull",
+"decl_cow":"Animals declared cow",
+"decl_heifer":"Animals declared heifer",
+"decl_steer":"Animals declared steer",
+"discrepancies":"Animals with discrepancies between input sheet and tracing data",
+"fat_color":"",
+"fatclass_BGA":"Measured using BioGel application",
+"fatclass_UG":"Measured using ultrasound",
+"grade_fat":"Numerical score reflects the amount of subcutaneous fat covering the ribeye muscle at the 12th rib. Measured using a grading ruler.",
+"hotcarcass_wt":"Hot/unchilled weight post slaughter\r\n& removal of head, hide, intestinal weight and organs. Used to determine yield grade and dressing percentage",
+"image_id":"ID corresponding to image in tracings folder",
+"inter_fat":"",
+"lean_color":"",
+
+
+############## Tarql
+a:19970401_46F b:hotcarcass_wt 244 ;
+b:rib_fat1 9 ;
+.
+
+## think about using rdf data cube vocab for this:  https://www.w3.org/TR/vocab-data-cube/#reference-dsd
+b:hotcarcass_wt rdfs:isDescribedBy example-ds:_InstanceVariable_body_fat 
